@@ -33,7 +33,7 @@ class _HomepageState extends State<Homepage> {
               ),
               Stack(children: [
                 Container(
-                  height: 442,
+                  height: 445,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: primarypichcolor,
