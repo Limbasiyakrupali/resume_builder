@@ -1,5 +1,4 @@
-import 'dart:ui';
-
+import 'package:flutter/material.dart';
 import 'package:resume_builder/utils/allcolor.dart';
 
 class Textstyling {
@@ -9,13 +8,23 @@ class Textstyling {
     color: primaryblackcolor,
   );
   static TextStyle subtitle = TextStyle(
-    fontWeight: FontWeight.bold,
+    fontWeight: FontWeight.w600,
     fontSize: 23,
     color: primaryblackcolor,
   );
   static TextStyle labal = TextStyle(
-    fontWeight: FontWeight.bold,
+    fontWeight: FontWeight.w700,
     fontSize: 20,
+    color: primaryblackcolor,
+  );
+  static TextStyle smalllabal = TextStyle(
+    fontWeight: FontWeight.w600,
+    fontSize: 17,
+    color: primaryblackcolor,
+  );
+  static TextStyle textform = TextStyle(
+    fontWeight: FontWeight.w700,
+    fontSize: 14,
     color: primaryblackcolor,
   );
 }

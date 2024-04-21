@@ -1,26 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:resume_builder/utils/allcolor.dart';
+import 'package:resume_builder/utils/textstyling.dart';
 
 class Customwidget {
   static AppBar getAppBar(
       {required BuildContext context,
       required String title,
-      required String subtitle}) {
+      required Widget child}) {
     return AppBar(
-      backgroundColor: primarypichcolor,
-      centerTitle: true,
+      backgroundColor: primarylightgreencolor,
+      leading: Container(),
       title: Text(
         title,
-        style: TextStyle(
-            fontSize: 25, fontWeight: FontWeight.w700, color: Colors.black),
+        style: Textstyling.title,
       ),
       bottom: AppBar(
-          backgroundColor: primarypichcolor,
-          centerTitle: true,
-          title: Text(
-            subtitle,
-            style: TextStyle(fontWeight: FontWeight.w600, fontSize: 22),
-          )),
+        leading: Container(),
+        title: child,
+        backgroundColor: primarylightgreencolor,
+      ),
+      centerTitle: true,
     );
   }
 }
